@@ -1,29 +1,14 @@
+#include "common.h"
+
 #include <netdb.h>
 #include <netinet/in.h>
-#include <stdarg.h>
-#include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 #include <sys/fcntl.h>
 #include <sys/socket.h>
 #include <sys/types.h>
 #include <unistd.h>
 
-#define SERVER_PORT 12345
-#define BUF_SIZE 4096
 #define QUEUE_SIZE 10
-
-__attribute__((noreturn))
-static void fatal(const char *format, ...)
-{
-	va_list ap;
-
-	va_start(ap, format);
-	vfprintf(stderr, format, ap);
-	va_end(ap);
-
-	abort();
-}
 
 int main(int argc, char **argv)
 {
