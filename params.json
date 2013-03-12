@@ -1,0 +1,1 @@
+{"name":"behemoth","tagline":"polski death metal server","body":"```\r\nmake all\r\n```\r\n\r\n```\r\n[root@server ~]# ./server\r\n```\r\n\r\n```\r\n[user@user ~]$ ./client <host> <path>\r\n```","google":"","note":"Don't delete this file! It's used internally to help with page regeneration."}
